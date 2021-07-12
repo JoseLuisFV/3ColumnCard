@@ -14,3 +14,41 @@ html {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.products {
+    display: flex;
+    width: 90%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.product {
+    min-width: 320px;
+    max-width: 400px;
+    flex-grow: 2;
+    flex-shrink: 3;
+    flex-basis: 0;
+}
+
+.product:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.product:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.product:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
