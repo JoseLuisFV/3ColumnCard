@@ -22,27 +22,40 @@ main {
     padding-top: 100px;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
 .products {
     display: flex;
     width: 90%;
     min-width: 320px;
-    max-width: 1200px;
+    max-width: 1090px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-
+    overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     min-width: 320px;
-    max-width: 400px;
+    max-width: 390px;
+    height: 385px;
     flex-grow: 2;
     flex-shrink: 3;
     flex-basis: 0;
+    padding: 30px 40px;
 }
 
 .product:nth-child(1) {
     background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product:nth-child(2) {
@@ -51,4 +64,67 @@ main {
 
 .product:nth-child(3) {
     background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+
+.product:nth-child(1) .product__icon {
+    background-image: url('../images/icon-sedans.svg');
+}
+
+.product:nth-child(2) .product__icon {
+    background-image: url('../images/icon-suvs.svg');
+}
+
+.product:nth-child(3) .product__icon {
+    background-image: url('../images/icon-luxury.svg');
+}
+
+.product__icon {
+    display: block;
+    height: 40px;
+    width: 64px;
+}
+
+
+.product__name {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-family: var(--titles-font);
+    color: hsl(0, 0%, 95%);
+}
+
+
+.product__description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 30px;
+}
+
+
+.product__ca {
+    display: block;
+    height: 40px;
+    width: 140px;
+    padding: 10px 16px;
+    margin-top: auto;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 24px;
+}
+
+.product:nth-child(1) .product__ca {
+    color: hsl(31, 77%, 52%);
+}
+
+.product:nth-child(2) .product__ca {
+    color: hsl(184, 100%, 22%);
+}
+
+.product:nth-child(3) .product__ca {
+    color: hsl(179, 100%, 13%);
+}
+
