@@ -128,3 +128,11 @@ a {
     color: hsl(179, 100%, 13%);
 }
 
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(179, 100%, 13%);
+}
